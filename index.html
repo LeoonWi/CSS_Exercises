@@ -6,43 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style type="text/css">
-        /* Выбирает элементы с классами bbb и zzz */
-        .bbb.zzz {
+        #block1 h1, #block1 h2 {
+	        text-align: center;
+        }
+
+        #block2 h1, #block2 h2 {
+	        text-align: center;
+        }
+
+        #block h1 {
+            font-size: 30px;
+        }
+        
+        #block2 h2 {
+	        font-size: 20px;
+        }
+
+        #block3 h1, #block3 h2, #block3 h3 {
+            text-align: center;
+        }
+        
+        #block3 h2 {
+	        color: blue;
+        }
+
+        #block3 h3 {
+	        font-size: 16px;
 	        color: red;
         }
 
-        /* Выбирает элемент h2 с классами bbb и zzz */
-        h2.bbb.zzz {
-        	color: blue;
+        #block4 h1.eee, #block4 h1.zzz {
+            text-align: center;
         }
 
-        /* Выбирает элементы с id=elem и class=bbb */
-        #elem.bbb {
-        	color: green;
+        #block4 h1.eee {
+	        font-size: 30px;
+        }
+        
+        #block4 h1.zzz {
+	        font-size: 20px;
         }
 
-        /* Выбирает элемент с id=elem и классами bbb, zzz */
-        #elem.bbb.zzz {
-	        color: aqua;
-        }
-
-        /* Выбирает конкретный элемент h2 с id=elem и class=bbb */
-        h2#elem.bbb {
-	        color: yellow;
+        #eee h2, .xxx .kkk, .eee h2.zzz {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="elem" class="bbb">
-        <h2 id="elem" class="bbb">Lorem.</h2>
-        <p class="bbb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus porro esse quo totam?</p>
-        <p class="bbb zzz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis autem officia nesciunt.</p>
+    <div id="block1">
+        <h1>Hello</h1>
+        <h2>World</h2>
     </div>
-    <div id="elem" class="bbb zzz">
-        <h2 class="bbb zzz">Lorem.</h2>
-        <p class="bbb zzz">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat accusamus corrupti voluptatibus aliquam quod illum atque fugiat?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolores!</p>
+    <div id="block2">
+        <h1>My name is LeoonWi</h1>
+        <h2>И я киберкотлета</h2>
     </div>
-    <p class="bbb zzz">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, suscipit minus. Obcaecati magnam distinctio non?</p>
+    <div id="block3">
+        <h1>Привет</h1>
+        <h2>Мир</h2>
+        <h3>Я LeoonWi</h3>
+    </div>
+    <div id="block4">
+        <h1 class="eee">И я на втором курсе...</h1>
+        <h1 class="zzz">УНИВЕРАААА</h1>
+    </div>
+    <div id="eee">
+        <h2>Не люблю придумывать текст.</h2>
+    </div>
+    <div class="eee">
+        <h2 class="zzz">Это занимает больше времени, чем упрощение стилей :)</h2>
+    </div>
+    <div class="xxx">
+        <p class="kkk">Hello</p>
+    </div>
+    <div id="eee">
+        <h2>World</h2>
+    </div>
 </body>
 </html>
