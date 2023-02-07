@@ -6,23 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style type="text/css">
-        .eee.zzz.ccc {
-            color: aquamarine;
+        /* Выбирает элементы с классами bbb и zzz */
+        .bbb.zzz {
+	        color: red;
+        }
+
+        /* Выбирает элемент h2 с классами bbb и zzz */
+        h2.bbb.zzz {
+        	color: blue;
+        }
+
+        /* Выбирает элементы с id=elem и class=bbb */
+        #elem.bbb {
+        	color: green;
+        }
+
+        /* Выбирает элемент с id=elem и классами bbb, zzz */
+        #elem.bbb.zzz {
+	        color: aqua;
+        }
+
+        /* Выбирает конкретный элемент h2 с id=elem и class=bbb */
+        h2#elem.bbb {
+	        color: yellow;
         }
     </style>
 </head>
 <body>
-    <p class="eee">
-        абзац
-    </p>
-    <p class="zzz">
-        абзац
-    </p>
-    <p class="ccc">
-        абзац
-    </p>
-    <p class="eee zzz ccc">
-        абзац
-    </p>
+    <div id="elem" class="bbb">
+        <h2 id="elem" class="bbb">Lorem.</h2>
+        <p class="bbb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus porro esse quo totam?</p>
+        <p class="bbb zzz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis autem officia nesciunt.</p>
+    </div>
+    <div id="elem" class="bbb zzz">
+        <h2 class="bbb zzz">Lorem.</h2>
+        <p class="bbb zzz">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat accusamus corrupti voluptatibus aliquam quod illum atque fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolores!</p>
+    </div>
+    <p class="bbb zzz">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, suscipit minus. Obcaecati magnam distinctio non?</p>
 </body>
 </html>
