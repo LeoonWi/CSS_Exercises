@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style>
-        h2 {
-	        font-size: 20px;
+        #elem1 + li {
+            color: red;
         }
-        h2 {
-	        font-size: 30px;
+
+        .elem2 + li {
+            color: green;
         }
-        /* Шрифт станет 30px*/
-        h3 {
-	        font-size: 20px;
-	        color: blue;
-        }
-        h3 {
-        	font-style: italic;
-	        color: red;
-        }
-        /* Шрифт станет  intalic красного цвета*/
     </style>
 </head>
 <body>
-    <h2>text</h2>
-    <h3>text</h3>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li id="elem1">5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+    </ul>
+    <ul>
+        <li>1</li>
+        <li class="elem2">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="elem2">5</li>
+        <li>6</li>
+        <li>7</li>
+        <li class="elem2">8</li>
+        <li>9</li>
+    </ul>
 </body>
 </html>
