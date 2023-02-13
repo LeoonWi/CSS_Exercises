@@ -6,25 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style>
-        a:link {
-            color: blue;
+        a {
+	        color: red;
         }
         
-        a:visited {
-            color: green;
-        }
-
         a:hover {
-            color: red;
-            text-decoration: none;
+	        text-decoration: none;
         }
 
-        a:active {
-            color: black;
+        a.zzz {
+        	color: red;
+        }
+        
+        a.zzz:hover {
+	        text-decoration: none;
+        }
+
+        #block a.zzz {
+	        color: red;
+        }
+
+        #block a.zzz:hover {
+	        text-decoration: none;
+        }
+
+        .block a.zzz {
+        	color: red;
+        }
+
+        .block a.zzz:hover {
+	        text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <a href="#">ссылка</a>
+    <a href="#">Задание 1</a><br>
+    <a href="#" class="zzz">Задание 2</a><br>
+    <div id="block">
+        <a href="#" class="zzz">Задание 3</a>
+    </div>
+    <p class="block">Задание 4 <a href="#" class="zzz">ссылка</a> куда-то</p>
 </body>
 </html>
