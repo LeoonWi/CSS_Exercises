@@ -8,26 +8,24 @@
     <style>
         div {
             height: 300px;
-            width: 300px;
+            width: 600px;
             margin: 5px;
             display: inline-block;
             border-width: 5px;
         }
 
         #one {
-            border: solid blue;
+            border-style: solid;
+            border-left-color: yellow;
+            border-top-color: blue;
+            border-right-color: green;
+            border-bottom-color: red;
         }
 
         #two {
-            border: dotted red;
-        }
-
-        #three {
-            border: dashed yellow;
-        }
-
-        #four {
-            border: double blue;
+            border: 1px solid blue;
+            border-right: 3px dotted green;
+            border-left: 3px dashed red;
         }
     </style>
 </head>
@@ -36,12 +34,6 @@
 
     </div>
     <div id="two">
-
-    </div>
-    <div id="three">
-
-    </div>
-    <div id="four">
 
     </div>
 </body>
