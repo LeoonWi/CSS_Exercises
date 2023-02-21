@@ -9,12 +9,38 @@
         div {
             width: 300px;
             height: 300px;
-            border: 1px solid green;
-            border-radius: 50%;
+            margin: 5px;
+            display: inline-block;
+            border: 1px solid;
+        }
+
+        #one {
+            background-image: url(./bg.png);
+        }
+
+        #two {
+            background-image: url(./bg.png);
+            background-repeat: no-repeat;
+        }
+
+        #three {
+            background-image: url(./bg.png);
+            background-repeat: repeat-x;
+        }
+
+        #four {
+            background-image: url(./bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 150px;
+            background-color: brown;
         }
     </style>
 </head>
 <body>
-    <div></div>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
 </body>
 </html>
