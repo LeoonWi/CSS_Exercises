@@ -6,27 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style>
-        #first h1:first-of-type {
-            color: red;
-        }
-
-        #second h2:last-of-type {
+        li:not(.elem) {
             color: red;
         }
     </style>
 </head>
 <body>
-    <div id="first">
-        <h1>Hello</h1>
-        <h2>i'm</h2>
-        <h1>LeoonWi</h1>
-        <h2>!</h2>
-    </div>
-    <div id="second">
-        <h1>!</h1>
-        <h2>LeoonWi</h2>
-        <h1>i'm</h1>
-        <h2>Hello</h2>
-    </div>
+    <ul>
+        <li>1</li>
+        <li class="elem">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="elem">5</li>
+        <li>6</li>
+        <li>7</li>
+        <li class="elem">8</li>
+        <li>9</li>
+    </ul>
 </body>
 </html>
