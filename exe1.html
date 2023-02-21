@@ -6,36 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style>
-        #one {
+        #one, #two, #three {
             width: 600px;
-            border: 1px dashed blue;
+            height: 600px;
+            border: 1px solid red;
             margin: 5px;
-            display: inline-block;
+        }
+
+        .child {
+            border: 1px solid green;
         }
 
         #one .child {
-            height: 500px;
-            border: 1px solid orange;
+            height: 300px;
             margin: 50px;
-        }
-
-        #two {
-            width: 600px;
-            height: 600px;
-            border: 1px dashed blue;
-            margin: 5px;
-            display: inline-block;
+            margin-bottom: 300px;
         }
 
         #two .child {
-            border: 1px dashed orange;
-            margin: 50px;
+            height: 400px;
+            margin: 100px 50px 100px;
         }
 
-        .childTwo {
-            border: 1px solid red;
-            margin: 50px;
-            height: 400px;
+        #three .child {
+            height: 500px;
+            margin: 50px 200px 50px 200px;
         }
     </style>
 </head>
@@ -44,11 +39,10 @@
         <div class="child"></div>
     </div>
     <div id="two">
-        <div class="child">
-            <div class="childTwo">
-
-            </div>
-        </div>
+        <div class="child"></div>
+    </div>
+    <div id="three">
+        <div class="child"></div>
     </div>
 </body>
 </html>
