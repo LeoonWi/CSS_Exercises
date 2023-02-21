@@ -6,40 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style>
-        ol#one {
-            list-style-type: lower-alpha;
+        #one {
+            width: 600px;
+            border: 1px dashed blue;
+            margin: 5px;
+            display: inline-block;
         }
 
-        ol#two {
-            list-style-type: lower-greek;
+        #one .child {
+            height: 500px;
+            border: 1px solid orange;
+            margin: 50px;
         }
 
-        ol#three {
-            list-style-type: upper-alpha;
+        #two {
+            width: 600px;
+            height: 600px;
+            border: 1px dashed blue;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        #two .child {
+            border: 1px dashed orange;
+            margin: 50px;
+        }
+
+        .childTwo {
+            border: 1px solid red;
+            margin: 50px;
+            height: 400px;
         }
     </style>
 </head>
 <body>
-    <ol id="one">
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-    </ol>
-    <ol id="two">
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-    </ol>
-    <ol id="three">
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-        <li>list item</li>
-    </ol>
+    <div id="one">
+        <div class="child"></div>
+    </div>
+    <div id="two">
+        <div class="child">
+            <div class="childTwo">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
