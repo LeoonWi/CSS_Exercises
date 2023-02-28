@@ -6,17 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
     <style>
-        div {
-	        width: 100px;
-	        height: 100px;
+        #parent {
 	        border: 1px solid red;
-            display: inline-block;
+        }
+
+        #one {
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            margin: 10px auto;
+        }
+
+        #two {
+            width: 400px;
+            height: 200px;
+            border: 1px solid green;
+            margin: 10px auto;
+        }
+
+        #three {
+            width: 600px;
+            height: 200px;
+            border: 1px solid green;
+            margin: 10px auto;
         }
     </style>
 </head>
 <body>
-    <div class="elem">text</div>
-    <div class="elem">text</div>
-    <div class="elem">text</div>
+    <div id="parent">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
 </body>
 </html>
