@@ -12,21 +12,54 @@
             text-align: center;
         }
 
+        .child {
+	        padding: 10px;
+	        border: 1px solid green;
+            display: inline-block;
+            margin: auto 5px;
+        }
+
         #parent {
-            padding: 10px 10px;
+	        padding: 10px 0;
+            padding-right: 10px;
 	        border: 1px solid red;
             text-align: right;
+        }
+        
+        #child {
+	        padding: 10px;
+	        border: 1px solid green;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .parent-a {
+	        padding: 10px 0;
+	        border: 1px solid red;
+            text-align: right;
+        }
+        
+        .child-a {
+	        width: 100px;
+	        padding: 10px;
+	        border: 1px solid green;
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="parent">
-        <a href="">ссылка 1</a>
-        <a href="">ссылка 2</a>
-        <a href="">ссылка 3</a>
+        <div class="child">text 1</div>
+        <div class="child">text 2</div>
+        <div class="child">text 3</div>
     </div>
     <div id="parent">
-        <a href="">ссылка</a>
+        <div id="child">text</div>
+    </div>
+    <div class="parent-a">
+        <a href="#" class="child-a">text</a>
     </div>
 </body>
 </html>
